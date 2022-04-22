@@ -1,0 +1,80 @@
+body {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ui {
+  width: 100%;
+  height: 100%;            
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 40px;
+}
+
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.chat-ui {
+  display: flex;
+  flex-direction: column;
+  background: rgba(1.0, 1.0, 1.0, 0.0);
+  width: 800px;
+  height: 200px;
+  padding: 10px 10px;
+  padding-bottom: 200px;
+  border-radius: 10px;
+}
+
+.chat-ui-text-area {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat-text {
+  font-size: .75em;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  text-align: center;
+}
+
+.chat-text.fadeOut {
+  opacity: 1.0;
+  animation: fadeOut 5s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1.0;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1.0;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0.0;
+    visibility: hidden;
+  }
+}
